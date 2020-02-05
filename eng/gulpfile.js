@@ -1,5 +1,5 @@
 // Plugins
-const {parallel, series, watch, src, dest} = require('gulp');
+const {series, watch, src, dest} = require('gulp');
 // const pug = require('gulp-pug');
 const less = require('gulp-less');
 const gcmq = require('gulp-group-css-media-queries');
@@ -20,7 +20,7 @@ const config = {
   css: {
     src: 'less/+(style).less',
     watch: 'less/**/*.less',
-    dest: '/css',
+    dest: 'css',
   },
   js: {
     src: 'js/+(script).js',
@@ -49,20 +49,20 @@ const config = {
  */
 function css() {
   return src(config.css.src)
-    .pipe(less())
-    .pipe(gcmq())
-    .pipe(dest(config.css.dest))
-    .pipe(browserSync.stream())
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
-    }))
-    .pipe(cleanCSS({
-      level: 2,
-    }))
-    .pipe(rename({
-      extname: '.min.css',
-    }))
-    .pipe(dest(config.css.dest));
+      .pipe(less())
+      .pipe(gcmq())
+      .pipe(dest(config.css.dest))
+      .pipe(browserSync.stream())
+      .pipe(autoprefixer({
+        browsers: ['last 2 versions'],
+      }))
+      .pipe(cleanCSS({
+        level: 2,
+      }))
+      .pipe(rename({
+        extname: '.min.css',
+      }))
+      .pipe(dest(config.css.dest));
 }
 
 /**
@@ -87,7 +87,7 @@ function css() {
 function livereload(done) {
   browserSync.init({
     server: {
-      baseDir: config.root,
+      baseDir: './',
     },
   });
 
@@ -103,13 +103,13 @@ exports.css = css;
 // Build final bundle from pug, less, js
 // exports.build = parallel(html, css);
 // Watch changes from pug, less, js
-exports.watch = series(parallel(css), livereload,
-  function () {
-    watch('index.html', function (done) {
-      browserSync.reload();
+exports.watch = series(css, livereload,
+    function() {
+      watch('index.html', function(done) {
+        browserSync.reload();
 
-      done();
+        done();
+      });
+
+      watch(config.css.watch, css);
     });
-
-    watch(config.css.watch, css);
-  });

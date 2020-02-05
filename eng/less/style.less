@@ -164,9 +164,208 @@ img {
     border-style: none;
 }
 
+// Own styles
+.is-app-theme {
+    margin-top: 44px;
+}
+
+.we-screenshot-viewer__screenshots {
+    padding-top: 19px;
+}
+
+.l-column--equal-height {
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+}
+
+@media only screen and (min-width: 1069px) {
+    .large-4 {
+        -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        width: 31.39456%;
+        max-width: 31.39456%;
+    }
+}
+
+.l-column--equal-height>.we-customer-review,
+.l-column--equal-height>.we-trusted-review {
+    min-height: 184px;
+}
+
+.we-customer-review {
+    padding: 13px 16px 16px;
+}
+
+.we-customer-review,
+.we-trusted-review {
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    -webkit-align-self: start;
+    -ms-flex-item-align: start;
+    align-self: start;
+    height: 100%;
+}
+
+.we-rating-count,
+.we-star-rating {
+    display: inline-block;
+}
+
+.we-customer-review__rating {
+    margin-bottom: 3px;
+}
+
+.we-star-rating-stars,
+.we-star-rating-stars-outlines {
+    display: inline-block;
+    height: 9.5px;
+    background-image: url(/assets/images/stars-lg-bc4f4bf….svg);
+    background-size: 10px 19px;
+}
+
+.we-star-rating-stars-outlines {
+    width: 50px;
+    background-position: 0 9.5px;
+    line-height: 9.5px;
+    z-index: 1;
+}
+
+
+.we-star-rating--large .we-star-rating-stars-outlines {
+    width: 120px;
+    background-position: 0 25px;
+}
+
+
+.we-star-rating-stars {
+    width: 0;
+    background-position-x: 0;
+}
+
+.we-star-rating--large .we-star-rating-stars,
+.we-star-rating--large .we-star-rating-stars-outlines {
+    height: 25px;
+    background-size: 24px 50px;
+}
+
+.we-star-rating-stars.we-star-rating-stars-5 {
+    width: 50px;
+}
+
+.we-star-rating--large .we-star-rating-stars.we-star-rating-stars-5 {
+    width: 120px;
+}
+
+.we-customer-review__header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.we-customer-review__header--user {
+    margin-bottom: 15px;
+    color: #8e8e93;
+    font-size: 12px;
+    line-height: 1.33341;
+    font-weight: 600;
+    letter-spacing: 0;
+    font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.we-truncate {
+    position: relative;
+    z-index: 1;
+}
+
+.we-truncate--single-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.we-customer-review__separator {
+    white-space: pre;
+}
+
+.we-customer-review__date {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.we-truncate--single-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.we-customer-review__title {
+    font-size: 13px;
+    line-height: 1.38462;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.we-customer-review__body {
+    font-size: 13px;
+    line-height: 1.38462;
+    font-weight: 400;
+    letter-spacing: -.005em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.we-clamp {
+    display: block;
+    overflow: hidden;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-position: right bottom;
+    mask-position: right bottom;
+    word-break: break-word;
+}
+
+.we-truncate__button {
+    position: absolute;
+    bottom: 0;
+    float: initial;
+    right: 0;
+    z-index: 1;
+}
+
+.is-app-theme .link {
+    color: #0070c9;
+}
+
+.we-customer-review__header--response {
+    margin-top: 18px;
+}
+
+.information-list__item__definition {
+    display: table-cell;
+    vertical-align: initial;
+    padding-left: 20px;
+    font-size: 13px;
+    line-height: 1.38462;
+    font-weight: 400;
+    letter-spacing: -.005em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+//End own styles
+
 .l-row {
     padding: 0;
-    font-size: 0
+    font-size: 0;
+
+    &__hero {
+        padding-bottom: 32px;
+
+    }
 }
 
 .l-row--peek {
