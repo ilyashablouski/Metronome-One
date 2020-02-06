@@ -4020,7 +4020,7 @@ html.ac-gn-noscroll-long {
 
 :lang(zh-CN),
 html {
-  quotes: "�""�"
+  quotes: "“""”";
 }
 
 .footnote,
@@ -5875,7 +5875,7 @@ body:lang(zh-TW) {
 }
 
 :lang(ru) {
-  quotes: "� "" �"
+  quotes: "« "" »";
 }
 
 body {
@@ -8033,10 +8033,6 @@ ul {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch
-}
-
-body {
-  min-width: 320px
 }
 
 .small-hide {
@@ -14393,14 +14389,6 @@ html[dir=rtl] .icon-review-quote::before {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap
-}
-
-.inline-list__item--bulleted:not(:first-of-type)::before {
-  z-index: 1;
-  content: "?�?";
-  content: "?�?"/"";
-  -webkit-alt: "";
-  alt: ""
 }
 
 .inline-list__item--slashed:not(:first-of-type)::before {
