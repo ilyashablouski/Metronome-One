@@ -840,6 +840,7 @@ img {
   line-height: 1.38462;
   font-weight: 400;
   letter-spacing: -0.005em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .app-header__subtitle + .app-header__identity {
