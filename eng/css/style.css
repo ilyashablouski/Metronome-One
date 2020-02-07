@@ -1,14 +1,7 @@
 @font-face {
   font-family: 'SF Pro Display';
   src: url('../fonts/SFProDisplay-Regular.woff2') format('woff2'), url('../fonts/SFProDisplay-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SF Pro Display';
-  src: url('../fonts/SFProDisplay-Bold.woff2') format('woff2'), url('../fonts/SFProDisplay-Bold.woff') format('woff');
-  font-weight: bold;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -17,6 +10,27 @@
   src: url('../fonts/SFProDisplay-Semibold.woff2') format('woff2'), url('../fonts/SFProDisplay-Semibold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../fonts/SFProDisplay-Bold.woff2') format('woff2'), url('../fonts/SFProDisplay-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/SFProText-Regular.woff2") format("woff2"), url("../fonts/SFProText-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/SFProText-Semibold.woff2") format("woff2"), url("../fonts/SFProText-Semibold.woff") format("woff");
 }
 
 html {
@@ -29,6 +43,7 @@ html {
 *,
 *:before,
 *:after {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -106,6 +121,10 @@ ul ul {
   list-style: none;
 }
 
+.overflow-hidden {
+  overflow-y: hidden;
+}
+
 .ac-video-player .end-state-container .end-state-item .end-state-link,
 .link {
   text-decoration: none;
@@ -159,7 +178,7 @@ img {
 }
 
 .is-app-theme {
-  margin-top: 44px;
+  margin-top: 48px;
 }
 
 .we-screenshot-viewer__screenshots {
@@ -289,7 +308,8 @@ img {
   font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.we-truncate__button {
+.we-truncate__button,
+.we-truncate__button_modal {
   position: absolute;
   bottom: 0;
   float: initial;
@@ -303,17 +323,6 @@ img {
 
 .we-customer-review__header--response {
   margin-top: 18px;
-}
-
-.information-list__item__definition {
-  display: table-cell;
-  vertical-align: initial;
-  padding-left: 20px;
-  font-size: 13px;
-  line-height: 1.38462;
-  font-weight: 400;
-  letter-spacing: -0.005em;
-  font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .we-banner,
@@ -607,13 +616,6 @@ img {
   word-break: break-word;
 }
 
-.we-truncate__button {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-}
-
 .whats-new__content::after,
 .whats-new__content::before {
   content: ' ';
@@ -653,6 +655,11 @@ img {
   line-height: 1.38462;
   font-weight: 400;
   letter-spacing: -0.005em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+:not(:first-of-type) > .information-list__item__term {
+  padding-top: 8px;
 }
 
 .we-customer-ratings {
@@ -771,7 +778,6 @@ img {
 .we-artwork__image {
   margin: 0;
   display: block;
-  border-radius: 20px;
   border: 1px solid #e5e5e5;
   width: 300px;
   height: 649px;
@@ -780,7 +786,53 @@ img {
 .product-hero__artwork .we-artwork__image {
   width: 246px;
   height: 246px;
-  border-radius: 21%;
+  border-radius: 23%;
+}
+
+.we-artwork::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 0;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  border-radius: 6px;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.we-artwork--ios-app-icon .we-artwork__image,
+.we-artwork--ios-app-icon::before {
+  border-radius: 22.5%;
+}
+
+.we-artwork--ios-app-icon::before {
+  background: url(../images/icon-app-mask-border.svg) center / 100% 100% no-repeat;
+}
+
+.we-artwork--ios-app-icon .we-artwork__image,
+.we-artwork--ios-app-icon::before {
+  border: none;
+}
+
+.ember260,
+#ember260::before {
+  width: 320px;
+  height: 320px;
+}
+
+.we-artwork--screenshot-version-iphone-6-5::before {
+  background: url(../images/iphone-6-5-mask-border.svg) center / 100% 100% no-repeat;
+}
+
+.we-artwork--screenshot-version-iphone-6-5 .we-artwork__image, .we-artwork--screenshot-version-iphone-6-5::before {
+  border-radius: 10%/4.7%;
+}
+
+.we-artwork--screenshot-version-iphone-6-5 .we-artwork__image,
+.we-artwork--screenshot-version-iphone-6-5::before {
+  border: none;
 }
 
 .product-header__title {
@@ -1506,13 +1558,69 @@ img {
   display: inline-block;
   font-style: normal;
   font-weight: bold;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1;
   position: relative;
   z-index: 1;
   alt: '';
   text-decoration: none;
-  content: "❌";
+  content: "✖";
+}
+
+.modal-container_close {
+  display: none !important;
+}
+
+.version-history__headline {
+  margin-top: 17px;
+  margin-bottom: 17px;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.024em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.list-button:first-of-type,
+.tracklist-footer,
+.version-history__item {
+  border-top: 1px solid #e5e5e5;
+}
+
+.version-history__item {
+  padding-top: 11px;
+  padding-bottom: 12px;
+}
+
+.version-history__item__version-number {
+  margin-bottom: 10px;
+  float: left;
+  font-size: 13px;
+  line-height: 1.38462;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.version-history__item__release-date {
+  float: right;
+  margin-bottom: 10px;
+  color: #8e8e93;
+  font-size: 13px;
+  line-height: 1.38462;
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.version-history__item__release-notes {
+  margin-bottom: 21px;
+  clear: both;
+  font-size: 13px;
+  line-height: 1.38462;
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @media only screen and (min-width: 736px) {
@@ -2006,6 +2114,14 @@ img {
 
   .we-modal__content__wrapper {
     max-height: calc(100vh - 168px);
+  }
+}
+
+@media (min-width: 736px) {
+  .ember260,
+  #ember260::before {
+    width: 157px;
+    height: 157px;
   }
 }
 
@@ -2518,6 +2634,10 @@ img {
   .badge--product-title {
     margin-bottom: 2px;
   }
+
+  #ember255 {
+    display: none;
+  }
 }
 
 @media (min-width: 1069px) {
@@ -2585,6 +2705,10 @@ img {
 }
 
 @media only screen and (max-width: 735px) {
+  #ember255 {
+    display: none;
+  }
+
   .l-column--small-hide + .l-column {
     margin-left: 0;
   }
@@ -2799,6 +2923,18 @@ img {
     width: 100% !important;
     height: auto !important;
   }
+
+  .information-list__item:last-child {
+    display: none;
+  }
+
+  .section__mobile {
+    border-bottom: none;
+  }
+
+  .section__mobile_pad {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -2821,10 +2957,6 @@ img {
     text-align: right;
     top: auto;
     bottom: 15px;
-  }
-
-  .is-app-theme {
-    margin-top: 48px;
   }
 
   .we-localnav__title {

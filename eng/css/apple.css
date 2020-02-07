@@ -5809,13 +5809,6 @@ button:disabled {
   }
 }
 
-html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 106.25%
-}
-
 [lang]:lang(ar) {
   font-family: "SF Pro AR", "SF Pro Gulf", "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
@@ -5876,16 +5869,6 @@ body:lang(zh-TW) {
 
 :lang(ru) {
   quotes: "« "" »";
-}
-
-body {
-  font-size: 13px;
-  line-height: 1.38462;
-  font-weight: 400;
-  letter-spacing: -.005em;
-  font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
-  font-style: normal
 }
 
 b,
@@ -6211,7 +6194,7 @@ sub {
 
 .icon-external::after,
 .icon-external::before {
-  content: "?"
+  content: "↗"
 }
 
 .icon-share::after,
@@ -6749,13 +6732,6 @@ html[dir=rtl] .icon-copy {
 body,
 html {
   background-color: #f2f2f2
-}
-
-*,
-::after,
-::before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit
 }
 
 h1,
@@ -11276,11 +11252,6 @@ html.touch .shelf-grid-nav__arrow:disabled {
   .targeted-link:not(.targeted-link--no-monochrome-underline) .targeted-link__target {
     text-decoration: underline !important
   }
-}
-
-.section {
-  padding-top: 19px;
-  padding-bottom: 32px
 }
 
 .section--hero,
