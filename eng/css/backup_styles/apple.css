@@ -5612,14 +5612,6 @@ ul+h6 {
   opacity: .7
 }
 
-@font-face {
-  font-family: "Apple WebExp Icons Custom";
-  font-style: normal;
-  font-weight: 400;
-  src: url(/assets/webexp-iconfont/fonts/webexpicons_text-bdc85d47b29a9da01827425eb7340f0b.eot);
-  src: url(/assets/webexp-iconfont/fonts/webexpicons_text-bdc85d47b29a9da01827425eb7340f0b.eot?#iefix) format("embedded-opentype"), url(/assets/webexp-iconfont/fonts/webexpicons_text-a82fbaf257207b3af3a7956736224bad.woff) format("woff"), url(/assets/webexp-iconfont/fonts/webexpicons_text-88304726fe4522e57d15c48f1f21d418.ttf) format("truetype")
-}
-
 .ember-basic-dropdown {
   position: relative;
   z-index: 2
@@ -5894,16 +5886,6 @@ body:lang(th) {
   font-family: "SF Pro TH", "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
-.icon::after,
-.icon::before,
-.modal-close::after,
-.modal-close::before,
-.more::after,
-.more::before {
-  font-family: "SF Pro Icons", "Apple WebExp Icons Custom";
-  line-height: 1;
-  alt: ''
-}
 
 body,
 button,

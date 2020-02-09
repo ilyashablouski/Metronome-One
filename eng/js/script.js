@@ -5,8 +5,6 @@ const mainNode = document.querySelector('.is-app-theme');
 const mainModalNode = document.getElementById('modal-container');
 const modalNodeOther = document.querySelector('.we-modal-1');
 const modalNodeUpdate = document.querySelector('.we-modal-2');
-// const modalCommonNode = document.querySelector('.we-modal');
-// const closeModalButtons = document.querySelectorAll('.close-button');
 const stickNode = document.getElementById('localnav');
 
 /**
