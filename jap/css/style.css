@@ -5,8 +5,8 @@
   font-style: normal;
   font-weight: 400;
   src: local('Open Sans Regular'), local('OpenSans-Regular'),
-       url('../fonts/open-sans-v17-greek-ext_cyrillic_latin-ext_greek_cyrillic-ext_vietnamese_latin-regular.woff2') format('woff2'), 
-       url('../fonts/open-sans-v17-greek-ext_cyrillic_latin-ext_greek_cyrillic-ext_vietnamese_latin-regular.woff') format('woff');
+    url('../fonts/open-sans-v17-greek-ext_cyrillic_latin-ext_greek_cyrillic-ext_vietnamese_latin-regular.woff2') format('woff2'),
+    url('../fonts/open-sans-v17-greek-ext_cyrillic_latin-ext_greek_cyrillic-ext_vietnamese_latin-regular.woff') format('woff');
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -17,8 +17,8 @@
   font-style: normal;
   font-weight: 600;
   src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
-       url('../fonts/open-sans-v17-greek-ext_cyrillic_latin-ext_greek_cyrillic-ext_vietnamese_latin-600.woff2') format('woff2'), 
-       url('../fonts/open-sans-v17-greek-ext_cyrillic_latin-ext_greek_cyrillic-ext_vietnamese_latin-600.woff') format('woff');
+    url('../fonts/open-sans-v17-greek-ext_cyrillic_latin-ext_greek_cyrillic-ext_vietnamese_latin-600.woff2') format('woff2'),
+    url('../fonts/open-sans-v17-greek-ext_cyrillic_latin-ext_greek_cyrillic-ext_vietnamese_latin-600.woff') format('woff');
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -29,8 +29,8 @@
   font-style: normal;
   font-weight: 700;
   src: local('Open Sans Bold'), local('OpenSans-Bold'),
-       url('../fonts/open-sans-v17-greek-ext_cyrillic_latin-ext_greek_cyrillic-ext_vietnamese_latin-700.woff2') format('woff2'), 
-       url('../fonts/open-sans-v17-greek-ext_cyrillic_latin-ext_greek_cyrillic-ext_vietnamese_latin-700.woff') format('woff');
+    url('../fonts/open-sans-v17-greek-ext_cyrillic_latin-ext_greek_cyrillic-ext_vietnamese_latin-700.woff2') format('woff2'),
+    url('../fonts/open-sans-v17-greek-ext_cyrillic_latin-ext_greek_cyrillic-ext_vietnamese_latin-700.woff') format('woff');
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -120,6 +120,10 @@ body,
 html {
   margin: 0;
   padding: 0;
+}
+
+.overflow-hidden {
+  overflow-y: hidden;
 }
 
 #ac-globalnav {
@@ -623,7 +627,7 @@ html {
 #ac-globalnav .ac-gn-link-support {
   background-size: 52px 44px;
   background-repeat: no-repeat;
-  background-image: url(https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/links/support/image_small.svg);
+  background-image: url(https://www.apple.com/ac/globalnav/4/ja_JP/images/globalnav/links/support/image_large.svg);
   background-position: center center;
   background-origin: content-box;
   background-size: cover;
@@ -1894,7 +1898,7 @@ table {
 }
 
 .localnav.localnav-sticking .localnav-background:after {
-  background-color: rgba(51,51,51,.1);
+  background-color: rgba(51, 51, 51, .1);
 }
 
 #localnav-sticky-placeholder {
@@ -5048,7 +5052,11 @@ img {
 }
 
 .we-truncate__button,
-.we-truncate__button_modal {
+.we-truncate__button_modal,
+.upLeftButton,
+.downLeftButton,
+.upRightButton,
+.downRightButton {
   position: absolute;
   bottom: 0;
   float: initial;
@@ -6066,7 +6074,7 @@ img {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url(https://www.apple.com/ac/flags/1/images/us/16.png);
+  background-image: url(https://www.apple.com/ac/flags/1/images/jp/16.png);
   padding-right: 5px;
   background-position: left center;
   cursor: pointer;
@@ -7064,6 +7072,10 @@ img {
 }
 
 @media (min-width:736px) {
+  .we-truncate__button_more {
+    bottom: 18px;
+  }
+
   #ember260::before,
   .ember260 {
     width: 157px;
@@ -8238,7 +8250,7 @@ img {
   #ac-globalnav .ac-gn-link-support {
     background-size: 62px 43px;
     background-repeat: no-repeat;
-    background-image: url(https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/links/support/image_small.svg);
+    background-image: url(https://www.apple.com/ac/globalnav/4/ja_JP/images/globalnav/links/support/image_small.svg);
   }
 
   #ac-globalnav .ac-gn-link-search {
@@ -9430,10 +9442,6 @@ img {
     -webkit-mask: none;
   }
 
-  #ember245 {
-    height: 90px;
-  }
-
   .l-column--small-hide+.l-column {
     margin-left: 0;
   }
@@ -9791,6 +9799,6 @@ only screen and (min-resolution:1.5dppx),
 (-webkit-min-device-pixel-ratio:1.5),
 (min-resolution:144dpi) {
   #ac-globalfooter .ac-gf-footer-locale-flag {
-    background-image: url(https://www.apple.com/ac/flags/1/images/us/32.png);
+    background-image: url(https://www.apple.com/ac/flags/1/images/jp/32.png);
   }
 }
