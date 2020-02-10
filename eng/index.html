@@ -8,8 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>App Store: Metronome ONE — BPM & Playlist</title>
 
-  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="preload" href="css/style.min.css" as="style">
   <link rel="preload" href="js/script.js" as="script">
+
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
 </head>
@@ -185,9 +186,10 @@
         <div class="localnav-background we-localnav__background"></div>
         <div class="localnav-content we-localnav__content">
           <div class="localnav-title we-localnav__title">
-            <span class="we-localnav__title__qualifier" data-test-we-localnav-preview-title="">Предпросмотр в</span> <a
-              href="https://www.apple.com/ios/app-store/" data-we-link-to-exclude=""><span
-                class="we-localnav__title__product" data-test-we-localnav-store-title="">App&nbsp;Store</span></a>
+            <a href="https://www.apple.com/ios/app-store/" data-we-link-to-exclude="">
+              <span class="we-localnav__title__product" data-test-we-localnav-store-title="">App&nbsp;Store</span>
+            </a>
+            <span class="we-localnav__title__qualifier" data-test-we-localnav-preview-title="">Preview</span>
           </div>
           <div class="localnav-menu we-localnav__menu we-localnav__menu--app">
             <div class="localnav-actions we-localnav__actions">
@@ -198,7 +200,7 @@
     </nav>
 
     <div class="l-content-width we-banner" role="alert">
-      <p class="we-banner__copy">Приложение доступно только в App&nbsp;Store для iPhone и iPad.</p>
+      <p class="we-banner__copy">This app is available only on the App&nbsp;Store for iPhone and iPad.</p>
     </div>
 
     <div class="l-content-width">
@@ -263,11 +265,11 @@
             <header class="product-header app-header product-header--padded-start" role="banner">
 
               <h1 class="product-header__title app-header__title">
-                Metronome ONE — BPM &amp; Playlist
+                Metronome ONE - Beat &amp; Tempo
                 <span class="badge badge--product-title">4+</span>
               </h1>
 
-              <h2 class="product-header__subtitle app-header__subtitle">для гитары, барабанов, гитары</h2>
+              <h2 class="product-header__subtitle app-header__subtitle">Tap BPM &amp; Click Track</h2>
 
               <h2 class="product-header__identity app-header__identity">
                 <a href="https://apps.apple.com/us/developer/vladimir-grishman/id1428578367?l=ru" class="link"
@@ -285,7 +287,7 @@
                           class="we-star-rating-stars-outlines">
                           <span class="we-star-rating-stars we-star-rating-stars-4_5"></span>
                         </span>
-                        <figcaption class="we-rating-count star-rating__count">4,4, Оценок: 9</figcaption>
+                        <figcaption class="we-rating-count star-rating__count">4.4, 9 Ratings</figcaption>
                       </figure>
                     </li>
                   </ul>
@@ -296,11 +298,11 @@
 
                 <li class="product-header__list__item">
                   <ul class="inline-list inline-list--mobile-compact">
-                    <li class="inline-list__item inline-list__item--bulleted app-header__list__item--price">Бесплатно
+                    <li class="inline-list__item inline-list__item--bulleted app-header__list__item--price">Free
                     </li>
 
                     <li class="inline-list__item inline-list__item--bulleted app-header__list__item--in-app-purchase">
-                      Включает встроенные покупки</li>
+                      Offers In-App Purchases</li>
                   </ul>
                 </li>
               </ul>
@@ -311,7 +313,7 @@
 
 
         <div class="we-screenshot-viewer__screenshots section--bordered">
-          <h2 class="section__headline">Снимки экрана (iPhone)</h2>
+          <h2 class="section__headline">iPhone Screenshots</h2>
 
           <div id="ember425" class="we-screenshot-viewer ember-view">
             <div class="we-screenshot-viewer__screenshots screenshots">
@@ -597,71 +599,75 @@
             <div class="we-clamp"
               style="height: 90px; -webkit-mask: linear-gradient(0deg, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0) 18.0001px, rgb(0, 0, 0) 18.0001px), linear-gradient(270deg, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0) 32.8px, rgb(0, 0, 0) 68.8002px);
                         mask: linear-gradient(0deg, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0) 18.0001px, rgb(0, 0, 0) 18.0001px), linear-gradient(270deg, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0) 32.8px, rgb(0, 0, 0) 68.8002px);">
-              <p>&#65279;Мобильное приложение Метроном для музыкантов с возможностью
-                сохранять настройки песен (для гитаристов, барабанщиков и вообще любых музыкантов)</p>
+              <p dir="ltr" data-test-bidi="">&#65279;Mobile application Metronome ONE is created for musicians (guitar,
+                drums and other music players)</p>
               <br>
-              <p>Оно помогает:</p>
-              <p>Научиться играть под клик</p>
-              <p>Готовиться к концертам</p>
-              <p>Встроенный плейлист по песням помогает использовать его на живых
-                выступлениях</p>
-              <p>Удобный интерфейс</p>
-              <p>Чёткий и приятный клик от которого не болит голова</p>
-              <p>Привычные клики из популярных DAW</p>
+              <p dir="ltr" data-test-bidi="">It helps:</p>
+              <p dir="ltr" data-test-bidi="">— to learn playing by click</p>
+              <p dir="ltr" data-test-bidi="">— to be prepared for the concerts</p>
+              <p dir="ltr" data-test-bidi="">— built-in playlists can be used on life performances.</p>
               <br>
-              <p>Встречайте точный метроном с чёткими и приятными кликами. Это приложение
-                для профессиональных музыкантов, в котором собраны узнаваемые клики популярных DAW. Метроном позволяет
-                развить чувство ритма. Самостоятельно готовиться к выступлениям и концертам, потому что вы можете
-                сохранять настройки песен и выставлять их последовательности. </p>
-              <p>Метроном поможет вам отработать сложные пассажи в ровном темпе, развить
-                грув и стать более профессиональным музыкантом. </p>
+              <p dir="ltr" data-test-bidi="">User-friendly interface.</p>
+              <p dir="ltr" data-test-bidi="">Clear and pleasant click sounds without headaches. </p>
+              <p dir="ltr" data-test-bidi="">Common clicks from popular DAW.</p>
               <br>
-              <p>Особенности метронома:</p>
+              <p dir="ltr" data-test-bidi="">Meet super accurate metronome with clear and pleasant clicks! This
+                application can be used by professional musicians as well as amateurs. You can find recognizable clicks
+                of popular DAW inside.</p>
               <br>
-              <p>***Визуальный интерфейс***</p>
-              <p>Современный интерфейс с контрастными элементами управления.</p>
-              <p>Хорошое различим для людей с другим цветовосприятием</p>
+              <p dir="ltr" data-test-bidi="">The metronome is created for developing your rhythm skills. It will help
+                you during sole rehearsals or preparation for performances and concerts. By using the app you can save
+                settings of songs and set up their sequence.</p>
               <br>
-              <p>***Звуковые клики***</p>
-              <p>9 вариантов кликов, среди которых есть узнаваемые звуки из популярных DAW.
+              <p dir="ltr" data-test-bidi="">Metronome will help you work out difficult passages in an even pace,
+                develop groove and become a more professional musician.</p>
+              <br>
+              <p dir="ltr" data-test-bidi="">Metronome features:</p>
+              <br>
+              <p dir="ltr" data-test-bidi="">***Interface***</p>
+              <p dir="ltr" data-test-bidi="">Modern interface with contrast controls.</p>
+              <p dir="ltr" data-test-bidi="">Suitable for people with different color perception.</p>
+              <br>
+              <p dir="ltr" data-test-bidi="">***Sound Sets***</p>
+              <p dir="ltr" data-test-bidi=""> 9 options of clicks, including recognizable sounds from popular DAW.</p>
+              <p dir="ltr" data-test-bidi="">Each click is designed in a special way to have a clear transient and equal
+                entrance time. </p>
+              <p dir="ltr" data-test-bidi="">At the same time, it is well-balanced for making soft sound and being
+                pleasant for our ear</p>
+              <br>
+              <p dir="ltr" data-test-bidi="">*** Click sync ***</p>
+              <p dir="ltr" data-test-bidi="">Supports Ableton Link - you can sync over Wi-Fi with various devices that
+                support Ableton Link, for example, with Ableton Live.</p>
+              <br>
+              <p dir="ltr" data-test-bidi="">The app contains the following subscription options:</p>
+              <p dir="ltr" data-test-bidi="">— Monthly with a 3-day free trial at $4.99</p>
+              <p dir="ltr" data-test-bidi="">- Subscription automatically renews unless auto-renew is turned off at
+                least 24-hours prior to the end of the current period.</p>
+              <p dir="ltr" data-test-bidi="">— The cost of renewal is equal to the value that “Apple’s App Store Matrix”
+                determines as the equivalent of the subscription price in $USD.</p>
+              <p dir="ltr" data-test-bidi="">- Payment will be charged to iTunes Account at confirmation of purchase.
               </p>
-              <p>Каждый клик разработан специальным образом, чтобы иметь чёткий транзиент и
-                одинаковое время вступления. При этом он сбалансирован и сделан так чтобы звучать мягко и не утомлять
-                слух.</p>
+              <p dir="ltr" data-test-bidi="">— Any unused portion of a free trial period, if offered, will be forfeited
+                when the user purchases a subscription to that publication.</p>
+              <p dir="ltr" data-test-bidi="">- Subscriptions may be managed by the user and auto-renewal may be turned
+                off by going to the user’s Account Settings after purchase.</p>
               <br>
-              <p>***Синхронизация клика***</p>
-              <p>Поддерживает Ableton Link — вы можете синхронизироваться по Wi-Fi с
-                различными устройствами, которые поддерживают Ableton Link, например, с Ableton Live.</p>
+              <p dir="ltr" data-test-bidi="">Privacy Policy: https://axora.io/privacy-notice.html</p>
+              <p dir="ltr" data-test-bidi="">Terms of Service: https://axora.io/terms-of-user.html</p>
               <br>
-              <p>Приложение содержит следующие опции подписки:</p>
-              <br>
-              <p>- Подписка на месяц с бесплатным пробным периодом на 3 дня за $4.99.</p>
-              <p>- Подписка будет автоматически продлена, если автопродление не отключено не
-                позднее, чем за 24 часа до окончания текущей подписки.</p>
-              <p>- Цена подписки эквивалентна соответствующей цене в другой валюте,
-                определенной в ценовой матрице «Apple's App Store Matrix».</p>
-              <p>- Денежные средства за подписку будут списаны со счета iTunes аккаунта
-                пользователя после подтверждения покупки.</p>
-              <p>- Неиспользованное время бесплатной подписки (если предложено) будет
-                утрачено, если вы приобретете премиум подписку в течение пробного бесплатного периода.</p>
-              <p>- Настройки подписок могут быть изменены пользователем и автообновления
-                могут быть отключены в Настройках Аккаунта после совершения покупки.</p>
-              <br>
-              <p>Политика конфиденциальности: https://axora.io/privacy-notice.html</p>
-              <p>Правила пользования: https://axora.io/terms-of-user.html</p>
-              <br>
-              <p>*Цена считается на основе ценовой матрицы «Apple's App Store Matrix».</p>
+              <p dir="ltr" data-test-bidi="">*Prices can be different in different countries according to what “Apple’s
+                App Store Matrix” determines as the equivalent of the subscription price in $USD."</p>
             </div>
-            <button class="we-truncate__button link">еще</button>
+            <button class="we-truncate__button link">more</button>
           </div>
         </div>
       </div>
 
       <div class="section">
         <div class="section__nav section__nav--small">
-          <h2 class="section__headline">Что нового</h2>
+          <h2 class="section__headline">What’s New</h2>
           <div data-test-we-modal="page-overlay" id="ember208" class="ember-view version-history">
-            <button class="we-modal__show link button-modal-2" id="modal-trigger-ember208">История обновлений
+            <button class="we-modal__show link button-modal-2" id="modal-trigger-ember208">Version History
             </button>
           </div>
         </div>
@@ -670,26 +676,26 @@
         <div class="l-row whats-new__content">
           <div class="l-column small-12 medium-3 large-4 small-valign-top whats-new__latest">
             <div class="l-row">
-              <p class="l-column small-6 medium-12 whats-new__latest__version">Версия 1.4.6</p>
+              <p class="l-column small-6 medium-12 whats-new__latest__version">Version 1.4.6</p>
             </div>
           </div>
           <div class="l-column small-12 medium-9 large-8 small-valign-top">
             <div class="we-truncate">
-              <p>Исправлена ​​ошибка.</p>
+              <p>Fixed crush.</p>
             </div>
           </div>
         </div>
       </div>
 
       <div class="section">
-        <h2 class="section__headline">Оценки и отзывы</h2>
+        <h2 class="section__headline">Ratings and Reviews</h2>
 
         <div class="we-customer-ratings lockup ember-view">
           <div class="l-row">
             <div class="we-customer-ratings__stats l-column small-4 medium-6 large-4">
               <div class="we-customer-ratings__averages"><span class="we-customer-ratings__averages__display">4.4</span>
-                из 5</div>
-              <div class="we-customer-ratings__count small-hide medium-show">Оценок: 9</div>
+                out of 5</div>
+              <div class="we-customer-ratings__count small-hide medium-show">9 Ratings</div>
             </div>
 
             <div class=" l-column small-8 medium-6 large-4">
@@ -773,7 +779,7 @@
 
                 <button aria-hidden="true" class="we-truncate__button_modal link button-modal-1 button-modal-1"
                   data-ember-action="" data-ember-action-358="358">
-                  еще
+                  more
                 </button>
               </blockquote>
 
@@ -797,7 +803,7 @@
 
                 <button aria-hidden="true" class="we-truncate__button_modal link button-modal-1 button-modal-1_down"
                   data-ember-action="" data-ember-action-359="359">
-                  еще
+                  more
                 </button>
               </blockquote>
             </div>
@@ -809,47 +815,47 @@
       </div>
 
       <div class="section section__mobile">
-        <h2 class="section__headline">Информация</h2>
+        <h2 class="section__headline">Information</h2>
 
         <div class="information-list information-list--app medium-columns">
           <div class="information-list__item l-row">
-            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Продавец</dt>
+            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Seller</dt>
             <dd class="information-list__item__definition l-column medium-9 large-6">Vladimir Grishman</dd>
           </div>
           <div class="information-list__item l-row">
-            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Размер</dt>
-            <dd class="information-list__item__definition l-column medium-9 large-6">31,6 МБ</dd>
+            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Size</dt>
+            <dd class="information-list__item__definition l-column medium-9 large-6">31.6 MB</dd>
           </div>
           <div class="information-list__item l-row">
-            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Категория</dt>
+            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Category</dt>
             <dd class="information-list__item__definition l-column medium-9 large-6">
-              <a href="https://itunes.apple.com/us/genre/id6011?l=ru" class="link">Музыка</a>
+              <a href="https://itunes.apple.com/us/genre/id6011?l=ru" class="link">Music</a>
             </dd>
           </div>
           <div class="information-list__item l-row">
-            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Совместимость
+            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Compatibility
             </dt>
-            <dd class="information-list__item__definition l-column medium-9 large-6">Требуется iOS 11.2 и новее.
-              Совместимо с iPhone, iPad и iPod touch.</dd>
+            <dd class="information-list__item__definition l-column medium-9 large-6">Requires iOS 11.2 or later.
+              Compatible with iPhone, iPad, and iPod touch.</dd>
           </div>
           <div class="information-list__item l-row">
-            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Языки</dt>
+            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Languages</dt>
             <dd id="ember243"
               class="information-list__item__definition l-column medium-9 large-6 we-truncate we-truncate--multi-line we-truncate--interactive we-truncate--truncated ember-view">
 
               <div data-clamp="" id="ember245" class="we-clamp ember-view" ismorertl="false"
                 style="-webkit-mask: linear-gradient(0deg, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0) 18.0001px, rgb(0, 0, 0) 18.0001px), linear-gradient(270deg, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0) 24.6px, rgb(0, 0, 0) 60.6002px);">
-                <p dir="ltr" data-test-bidi="">русский, английский, арабский, вьетнамский, голландский, датский, иврит,
-                  индонезийский, испанский, итальянский, корейский, малайский, немецкий, польский, португальский,
-                  тайский, турецкий, упрощенный китайский, финский, французский, хинди, чешский, шведский, японский</p>
+                <p dir="ltr" data-test-bidi="">English, Arabic, Czech, Danish, Dutch, Finnish, French, German, Hebrew,
+                  Hindi, Indonesian, Italian, Japanese, Korean, Malay, Polish, Portuguese, Russian, Simplified Chinese,
+                  Spanish, Swedish, Thai, Turkish, Vietnamese</p>
               </div>
               <button aria-hidden="true" class="we-truncate__button link we-truncate__button_lang">
-                еще
+                more
               </button>
             </dd>
           </div>
           <div class="information-list__item l-row">
-            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Возраст</dt>
+            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Age Rating</dt>
             <dd class="information-list__item__definition l-column medium-9 large-6">4+</dd>
           </div>
           <div class="information-list__item l-row">
@@ -857,11 +863,11 @@
             <dd class="information-list__item__definition l-column medium-9 large-6">© Vladimir Grishman 2018-2019</dd>
           </div>
           <div class="information-list__item l-row">
-            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Цена</dt>
-            <dd class="information-list__item__definition l-column medium-9 large-6">Бесплатно</dd>
+            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Price</dt>
+            <dd class="information-list__item__definition l-column medium-9 large-6">Free</dd>
           </div>
           <div class="information-list__item l-row">
-            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">Встроенные покупки</dt>
+            <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">In-App Purchases</dt>
             <dd class="information-list__item__definition l-column medium-9 large-6">
               <ol role="table" class="list-with-numbers">
                 <div id="ember247" class="ember-view">
@@ -877,10 +883,10 @@
           <div class="information-list__item l-row">
             <dt class="information-list__item__term medium-valign-top l-column medium-3 large-2">&nbsp;</dt>
             <dd class="information-list__item__definition l-column medium-9 large-6">
-              <a href="https://axora.io/#call" class="link icon icon-after icon-external">Поддержка&nbsp;приложения</a>
+              <a href="https://axora.io/#call" class="link icon icon-after icon-external">App&nbsp;Support</a>
               &nbsp;
               <a href="https://axora.io/privacy-notice.html"
-                class="link icon icon-after icon-external">Политика&nbsp;конфиденциальности</a>
+                class="link icon icon-after icon-external">Privacy&nbsp;Policy</a>
             </dd>
           </div>
         </div>
@@ -904,27 +910,25 @@
 
     <section class="l-content-width section">
       <div class="section__nav">
-        <h2 class="section__headline">Поддерживается</h2>
+        <h2 class="section__headline">Supports</h2>
       </div>
       <ul class="supports-list l-row">
         <li class="supports-list__item l-column l-column--grid small-12 medium-6 large-4 supports-list_marg">
           <img src="images/icons/supports-FamilySharing@2x.png" class="supports-list__item__artwork" alt="">
           <div class="supports-list__item__copy">
             <h3 dir="ltr" id="ember250"
-              class="we-truncate we-truncate--single-line ember-view supports-list__item__copy__heading"> Семейный
-              доступ
+              class="we-truncate we-truncate--single-line ember-view supports-list__item__copy__heading">Family Sharing
             </h3>
             <h4 id="ember251"
               class="we-truncate we-truncate--multi-line we-truncate--interactive we-truncate--truncated ember-view supports-list__item__copy__description">
 
               <div data-clamp="" id="ember253" class="we-clamp ember-view" ismorertl="false"
                 style="height: 32px; -webkit-mask: linear-gradient(0deg, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0) 16.0009px, rgb(0, 0, 0) 16.0009px), linear-gradient(270deg, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0) 22.7077px, rgb(0, 0, 0) 54.7095px);">
-                <p dir="ltr" data-test-bidi="">С помощью семейного доступа приложением смогут пользоваться до шести
-                  участников «Семьи».</p>
+                <p dir="ltr" data-test-bidi="">With Family Sharing set up, up to six family members can use this app.</p>
               </div>
               <button aria-hidden="true" class="we-truncate__button link we-truncate__button_family"
                 data-ember-action="" data-ember-action-361="361">
-                еще
+                more
               </button>
             </h4>
           </div>
@@ -936,11 +940,11 @@
     <section class="l-content-width section">
       <div class="section__nav">
         <h2 class="section__headline">
-          Другие приложения этого разработчика
+          More By This Developer
         </h2>
         <a rel="nofollow" data-we-link-to-exclude=""
           href="https://apps.apple.com/us/app/metronome-one-bpm-playlist/id1428578368?l=ru&ls=#see-all/developer-other-apps"
-          id="ember255" class="link section__nav__see-all-link ember-view">См. все</a>
+          id="ember255" class="link section__nav__see-all-link ember-view">See All</a>
       </div>
 
       <div class="l-row l-row--peek">
@@ -1010,7 +1014,7 @@
             </div>
 
             <div dir="ltr" id="ember265"
-              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Музыка
+              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Music
             </div>
 
           </div>
@@ -1081,7 +1085,7 @@
             </div>
 
             <div dir="ltr" id="ember273"
-              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Утилиты
+              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Utilities
             </div>
 
           </div>
@@ -1147,13 +1151,12 @@
           <div class="we-lockup__copy">
             <div id="we-lockup-labelled-by-2" class="we-lockup__title " aria-label="Tuner ONE: Тюнер для гитары">
               <div dir="ltr" id="ember280"
-                class="we-truncate we-truncate--single-line ember-view targeted-link__target"> Tuner ONE: Тюнер для
-                гитары
+                class="we-truncate we-truncate--single-line ember-view targeted-link__target"> Tuner ONE: guitar & ukulele
               </div>
             </div>
 
             <div dir="ltr" id="ember281"
-              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Музыка
+              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Music
             </div>
           </div>
         </a>
@@ -1218,12 +1221,12 @@
           <div class="we-lockup__copy">
             <div id="we-lockup-labelled-by-3" class="we-lockup__title " aria-label="Dots ONE: Соедини точки">
               <div dir="ltr" id="ember288"
-                class="we-truncate we-truncate--single-line ember-view targeted-link__target"> Dots ONE: Соедини точки
+                class="we-truncate we-truncate--single-line ember-view targeted-link__target"> Dots ONE: Connect the dots
               </div>
             </div>
 
             <div dir="ltr" id="ember289"
-              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Игры
+              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Games
             </div>
           </div>
         </a>
@@ -1288,13 +1291,12 @@
           <div class="we-lockup__copy">
             <div id="we-lockup-labelled-by-4" class="we-lockup__title " aria-label="Tuner ONE PRO: Гитарный Тюнер">
               <div dir="ltr" id="ember296"
-                class="we-truncate we-truncate--single-line ember-view targeted-link__target"> Tuner ONE PRO: Гитарный
-                Тюнер
+                class="we-truncate we-truncate--single-line ember-view targeted-link__target"> Tuner ONE PRO Guitar & Ukulele
               </div>
             </div>
 
             <div dir="ltr" id="ember297"
-              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Музыка
+              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Music
             </div>
           </div>
         </a>
@@ -1304,11 +1306,11 @@
     <section class="l-content-width section section__final">
       <div class="section__nav">
         <h2 class="section__headline">
-          Вам может понравиться
+          You May Also Like
         </h2>
         <a rel="nofollow" data-we-link-to-exclude=""
           href="https://apps.apple.com/us/app/metronome-one-bpm-playlist/id1428578368?l=ru&ls=#see-all/customers-also-bought-apps"
-          id="ember298" class="link section__nav__see-all-link ember-view">См. все</a>
+          id="ember298" class="link section__nav__see-all-link ember-view">See All</a>
       </div>
 
       <div class="l-row l-row--peek">
@@ -1375,12 +1377,12 @@
           <div class="we-lockup__copy">
             <div id="we-lockup-labelled-by-5" class="we-lockup__title " aria-label="Метроном плюс">
               <div dir="ltr" id="ember307"
-                class="we-truncate we-truncate--single-line ember-view targeted-link__target"> Метроном плюс
+                class="we-truncate we-truncate--single-line ember-view targeted-link__target"> Metronome Plus - Beat & Tempo
               </div>
             </div>
 
             <div dir="ltr" id="ember308"
-              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Музыка
+              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Music
             </div>
           </div>
         </a>
@@ -1452,7 +1454,7 @@
             </div>
 
             <div dir="ltr" id="ember316"
-              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Музыка
+              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Music
             </div>
           </div>
         </a>
@@ -1517,14 +1519,14 @@
           </picture>
 
           <div class="we-lockup__copy">
-            <div id="we-lockup-labelled-by-7" class="we-lockup__title " aria-label="节拍器-专业电子节拍器">
+            <div id="we-lockup-labelled-by-7" class="we-lockup__title " aria-label="Metronome-Electronic Metronome">
               <div dir="ltr" id="ember323"
-                class="we-truncate we-truncate--single-line ember-view targeted-link__target"> 节拍器-专业电子节拍器
+                class="we-truncate we-truncate--single-line ember-view targeted-link__target"> Metronome-Electronic Metronome
               </div>
             </div>
 
             <div dir="ltr" id="ember324"
-              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Музыка
+              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Music
             </div>
           </div>
         </a>
@@ -1596,7 +1598,7 @@
             </div>
 
             <div dir="ltr" id="ember332"
-              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Музыка
+              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Music
             </div>
           </div>
         </a>
@@ -1663,12 +1665,12 @@
           <div class="we-lockup__copy">
             <div id="we-lockup-labelled-by-9" class="we-lockup__title " aria-label="Ticks - Метроном">
               <div dir="ltr" id="ember339"
-                class="we-truncate we-truncate--single-line ember-view targeted-link__target"> Ticks - Метроном
+                class="we-truncate we-truncate--single-line ember-view targeted-link__target"> Ticks - Pro Metronome
               </div>
             </div>
 
             <div dir="ltr" id="ember340"
-              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Музыка
+              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Music
             </div>
           </div>
         </a>
@@ -1740,7 +1742,7 @@
             </div>
 
             <div dir="ltr" id="ember348"
-              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Музыка
+              class="we-truncate we-truncate--single-line ember-view we-lockup__subtitle targeted-link__target"> Music
             </div>
           </div>
         </a>
