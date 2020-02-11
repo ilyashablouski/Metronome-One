@@ -35,6 +35,14 @@
 }
 
 @font-face {
+  font-family: 'SF Pro JP';
+  src: url('../fonts/SF_Pro_JP_Regular.woff2') format('woff2'),
+  url('../fonts/SF_Pro_JP_Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'SF Pro Display';
   src: url(../fonts/SFProDisplay-Regular.woff2) format('woff2'), url(../fonts/SFProDisplay-Regular.woff) format('woff');
   font-weight: 400;
@@ -83,7 +91,7 @@ html {
   line-height: 1.38462;
   font-weight: 400;
   letter-spacing: -.005em;
-  font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "SF Pro JP","SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .we-banner {
@@ -3234,10 +3242,6 @@ span[dir=rtl] {
   font-family: "SF Pro AR", "SF Pro Gulf", "SF Pro Display", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.section__headline:lang(ja) {
-  font-family: "SF Pro JP", "SF Pro Display", "SF Pro Icons", "Apple WebExp Icons Custom", "Hiragino Kaku Gothic Pro", "?????? Pro W3", "????", Meiryo, "MS P????", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 .section__headline:lang(ko) {
   font-family: "SF Pro KR", "SF Pro Display", "SF Pro Icons", "Apple WebExp Icons Custom", "Apple Gothic", "HY Gulim", MalgunGothic, "HY Dotum", "Lexi Gulim", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -5036,7 +5040,7 @@ img {
 }
 
 .we-customer-review__title {
-  font-size: 13px;
+  font-size: 11px;
   line-height: 1.38462;
   font-weight: 600;
   letter-spacing: -.005em;
@@ -5048,7 +5052,6 @@ img {
   line-height: 1.38462;
   font-weight: 400;
   letter-spacing: -.005em;
-  font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .we-truncate__button,
@@ -5069,7 +5072,7 @@ img {
 }
 
 .we-customer-review__header--response {
-  margin-top: 18px;
+  margin-top: 6px;
 }
 
 .we-banner {
@@ -5274,7 +5277,7 @@ img {
   -webkit-flex-shrink: 1;
   -ms-flex-negative: 1;
   flex-shrink: 1;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.2;
   font-weight: 700;
   letter-spacing: .024em;
@@ -5334,7 +5337,6 @@ img {
   line-height: 1.38462;
   font-weight: 400;
   letter-spacing: -.005em;
-  font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 :not(:first-of-type)>.information-list__item__term {
@@ -5522,7 +5524,7 @@ img {
 
 .product-header__title {
   display: block;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.2223;
   font-weight: 600;
   letter-spacing: .027em;
@@ -5573,7 +5575,7 @@ img {
   line-height: 1.38462;
   font-weight: 400;
   letter-spacing: -.005em;
-  font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "SF Pro JP","SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .app-header__subtitle+.app-header__identity {
@@ -5939,7 +5941,6 @@ img {
 
 .supports-list__item__copy__description {
   line-height: 1.33341;
-  font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .we-lockup__title {
@@ -6295,7 +6296,7 @@ img {
 .version-history__headline {
   margin-top: 17px;
   margin-bottom: 17px;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.2;
   font-weight: 700;
   letter-spacing: .024em;
@@ -6340,7 +6341,6 @@ img {
   line-height: 1.38462;
   font-weight: 400;
   letter-spacing: -.005em;
-  font-family: "SF Pro Text", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @media only screen and (min-width:736px) {
@@ -7066,7 +7066,7 @@ img {
     line-height: 1.2223;
     font-weight: 400;
     letter-spacing: .027em;
-    font-family: "SF Pro Display", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "SF Pro JP", "SF Pro Display", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
   .app-header__list {
@@ -7090,7 +7090,7 @@ img {
   }
 
   .product-header__title {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.25;
     font-weight: 700;
     letter-spacing: .023em;
